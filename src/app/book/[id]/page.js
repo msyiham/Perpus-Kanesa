@@ -92,6 +92,7 @@ export default function BookDetail({ params }) {
                             style={{ width: '100%', height: 'auto' }} 
                             className="rounded shadow img-fluid" 
                             alt="Foto Buku" 
+                            unoptimized
                           />
                         </div>
                         </>
