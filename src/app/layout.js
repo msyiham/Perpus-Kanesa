@@ -10,8 +10,8 @@ const jakarta = Plus_Jakarta_Sans({
   })
 
 export const metadata = {
-  title: 'Jobnova - Next Js Job Board & Job Portal Template',
-  description: 'Jobnova - Next Js Job Board & Job Portal Template',
+  title: 'Perpus Kanesa',
+  description: 'Perpus Kanesa',
 }
 
 export default function RootLayout({ children }) {
