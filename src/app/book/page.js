@@ -117,7 +117,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className='row text-dark'>
+                  <div className='row text-dark mt-5'>
                   <div className="row">
                     {loading ? (
                       <div className="col-12 text-center mt-4">
@@ -125,7 +125,7 @@ export default function Home() {
                       </div>
                     ) : (
                       currentBooks.map((book, index) => (
-                        <div className="col-12" key={index}>
+                        <div className="col-12 mb-2" key={index}>
                         <div className="job-post job-post-list rounded shadow p-4 d-md-flex align-items-center justify-content-between position-relative">
                             <div className="d-flex align-items-center w-310px">
                                 {/* <Image src={item.image} width={65} height={65} sizes="100vw" className="avatar avatar-small rounded shadow p-3 bg-white" alt=""/> */}
