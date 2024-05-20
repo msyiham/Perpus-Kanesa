@@ -111,6 +111,7 @@ export default function Home() {
                               <option value="all">Semua</option>
                               <option value="Teks">Teks</option>
                               <option value="Fiksi">Fiksi</option>
+                              <option value="Referensi">Referensi</option>
                           </select>
                         </div>
                       </div>
