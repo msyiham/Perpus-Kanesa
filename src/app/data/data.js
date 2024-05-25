@@ -1,4 +1,4 @@
-import {FiAirplay,FiAward, FiAtSign,FiCodesandbox,FiChrome,FiCopy,FiCpu,FiPhone, FiActivity, FiClock,FiFileText, FiUsers, FiUser,FiInbox,FiThumbsUp,FiUmbrella, FiHelpCircle, FiBookmark, FiSettings, FiMail,FiMapPin} from "../assets/icons/vander"
+import {FiAirplay,FiAward, FiAtSign,FiCodesandbox,FiChrome,FiCopy,FiCpu,FiPhone, FiActivity, FiClock,FiFileText,FiUsers, FiUser,FiInbox,FiThumbsUp,FiUmbrella, FiHelpCircle, FiBookmark, FiSettings, FiMail,FiMapPin, FiUserCheck} from "../assets/icons/vander"
 
 export const categoriesData = [
     {
@@ -702,20 +702,23 @@ export const commentsData = [
 export const contactData = [
     {
         icon:FiPhone,
-        title:'Phone',
-        desc:'Start working with Jobnova that can provide everything',
-        link:'tel:+152534-468-854'
+        title:'WhatsApp',
+        desc:'Bu Eva',
+        link:'https://wa.me/6282234936932',
+        linkText:'0822-3493-69327'
     },
     {
         icon:FiMail,
         title:'Email',
-        desc:'Start working with Jobnova that can provide everything',
-        link:'contact@example.com'
+        desc:'Email Resmi Perpustakaan',
+        link:'mailto.contact@example.com',
+        linkText:'contact@example.com'
     },
     {
-        icon:FiMapPin,
-        title:'Location',
-        desc:'Start working with Jobnova that can provide everything',
-        link:'View on Google map'
+        icon:FiUserCheck,
+        title:'Admin',
+        desc:'Muhammad Syiham Alfaruq',
+        link:'https://wa.me/6285230670806',
+        linkText:'0852-3067-0806'
     },
 ]

@@ -58,7 +58,7 @@ export default function ContactUs(){
                                     <div className="mt-4">
                                         <h5 className="mb-3">{item.title}</h5>
                                         <p className="text-muted">{item.desc}</p>
-                                        <Link href={item.link} className="text-primary">{item.link}</Link>
+                                        <Link href={item.link} className="text-primary">{item.linkText}</Link>
                                     </div>
                                 </div>
                             </div>
