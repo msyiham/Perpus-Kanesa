@@ -6,10 +6,10 @@ import { collection, getDocs } from 'firebase/firestore';
 export async function GET() {
   try {
     const querySnapshot = await getDocs(collection(FIRESTORE, 'daftar buku'));
-    console.log(querySnapshot)
     const data = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
     return NextResponse.json(data);
   } catch (error) {
+    console.error('Error fetching data from Firestore:', error);
     return NextResponse.json({ error: 'Failed to fetch data from Firestore' }, { status: 500 });
   }
 }
