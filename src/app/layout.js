@@ -10,7 +10,7 @@ const jakarta = Plus_Jakarta_Sans({
   })
 
 export const metadata = {
-  title: 'Perpus Kanesa',
+  title: 'Techno Library',
   description: 'Perpus Kanesa',
 }
 
