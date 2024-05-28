@@ -100,7 +100,7 @@ export default function BookDetail({ params }) {
                     </div>
                     <h4 className="mb-4 mt-5">Sinopsis:</h4>
 
-                    <p className="text-muted mb-5">{book.Sinopsis}.</p>
+                    <p className="text-muted mb-5" style={{textAlign:'justify'}}>{book.Sinopsis}.</p>
                     <Link href="/book">
                       <button className="btn btn-primary">Kembali</button>
                     </Link>
