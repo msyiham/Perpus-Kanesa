@@ -49,12 +49,13 @@ export default function BookDetail({ params }) {
     <div className="position-relative">
         <div className="shape overflow-hidden text-white">
             <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="#EEEEEE"></path>
             </svg>
         </div>
     </div>
 
-    <section className="section">
+
+    <section className="section" style={{backgroundColor:'#EEEEEE'}}>
     {book ? (
         <div>
           <div className="container">
@@ -98,9 +99,12 @@ export default function BookDetail({ params }) {
                         </>
                       ) : null}
                     </div>
-                    <h4 className="mb-4 mt-5">Sinopsis:</h4>
-
-                    <p className="text-muted mb-5" style={{textAlign:'justify'}}>{book.Sinopsis}.</p>
+                    {book.Sinopsis ?(
+                      <>
+                        <h4 className="mb-4 mt-5">Sinopsis:</h4>
+                        <p className="text-muted mb-5" style={{textAlign:'justify'}}>{book.Sinopsis}.</p>
+                      </>
+                    ):null}
                     <Link href="/book">
                       <button className="btn btn-primary">Kembali</button>
                     </Link>
