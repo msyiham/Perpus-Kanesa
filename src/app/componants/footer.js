@@ -60,7 +60,7 @@ export default function Footer({top}){
                     <div className="row align-items-center">
                         <div className="col-12">
                             <div className="text-center">
-                                <p className="mb-0 fw-medium">© Asistensi Mengajar UM Tahun 2024. <br/> Design with <i className="mdi mdi-heart text-danger"></i> by <Link href="https://shreethemes.in/" target="_blank" className="text-reset">Shreethemes</Link>.</p>
+                                <p className="mb-0 fw-medium">© Asistensi Mengajar UM Tahun 2024.</p>
                             </div>
                         </div>
                     </div>

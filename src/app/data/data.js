@@ -711,8 +711,8 @@ export const contactData = [
         icon:FiMail,
         title:'Email',
         desc:'Email Resmi Perpustakaan',
-        link:'mailto.contact@example.com',
-        linkText:'contact@example.com'
+        link:'mailto.librarysmkn1kepanjen@gmail.com',
+        linkText:'librarysmkn1kepanjen@gmail.com'
     },
     {
         icon:FiUserCheck,

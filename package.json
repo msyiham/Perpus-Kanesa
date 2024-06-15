@@ -21,6 +21,7 @@
     "react-scroll": "^1.9.0",
     "react-select": "^5.8.0",
     "sass": "^1.69.5",
+    "sweetalert2": "^11.11.1",
     "tiny-slider-react": "^0.5.7"
   },
   "devDependencies": {
