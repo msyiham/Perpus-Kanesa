@@ -5,7 +5,7 @@ import Image from "next/image";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useRouter } from 'next/navigation';
 import { FIREBASE_AUTH } from "../firebaseConfig";
-import Swal from 'sweetalert2'
+
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -14,32 +14,21 @@ export default function Login() {
   const redirect = searchParams.get('redirect'); // Extract 'redirect' parameter from URL
 
   const handleLogin = async (e) => {
-        e.preventDefault();
-        try {
-        await signInWithEmailAndPassword(FIREBASE_AUTH, email, password);
-        Swal.fire({
-            title: 'Selamat!',
-            text: 'Anda berhasil masuk.',
-            icon: 'success',
-            confirmButtonText: 'OK'
-        }).then(() => {
-            if (redirect && redirect !== 'undefined') {
-                router.push(decodeURIComponent(redirect));
-            } else {
-                router.push('/');
-            }
-              
-        });
-        } catch (error) {
-        console.error('Login failed:', error);
-        Swal.fire({
-            title: 'Error!',
-            text: 'Gagal Masuk. Tolong cek email dan password',
-            icon: 'error',
-            confirmButtonText: 'Retry'
-        });
-        }
-    };
+    e.preventDefault();
+    try {
+      await signInWithEmailAndPassword(FIREBASE_AUTH, email, password);
+      alert('Selamat! Anda berhasil masuk.');
+      if (redirect && redirect !== 'undefined') {
+        router.push(decodeURIComponent(redirect));
+      } else {
+        router.push('/');
+      }
+    } catch (error) {
+      console.error('Login failed:', error);
+      alert('Error! Gagal Masuk. Tolong cek email dan password.');
+    }
+  };
+  
   
 
   return (
